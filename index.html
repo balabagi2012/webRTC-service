@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miso 360度無死角</title>
+    <script type="module" crossorigin src="./main.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="videos">
+      <span id="local">
+        <video id="webcamVideo" autoplay playsinline></video>
+      </span>
+      <span id="remote">
+        <video id="remoteVideo" autoplay playsinline></video>
+      </span>
+    </div>
+    <h2>Please Start your Webcam</h2>
+    <button id="webcamButton">Start webcam</button>
+    <div id="isHost">
+      <h2>Create a new Call</h2>
+      <button id="callButton" disabled>Create Call (offer)</button>
+    </div>
+    <div id="isClient">
+      <h2>Join a Call</h2>
+      <button id="answerButton" disabled>Answer</button>
+    </div>
+    <h2>Hangup</h2>
+    <button id="hangupButton" disabled>Hangup</button>
+  </body>
+</html>
